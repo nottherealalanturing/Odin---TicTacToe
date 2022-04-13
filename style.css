@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: 50px 50px 50px;
+  margin: 50px auto;
+  width: 150px;
+}
+
+.cell {
+  border: 1px solid black;
+  width: 50px;
+  height: 50px;
+}
+
+.o {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.x {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+
+.x::after {
+  content: '';
+  height: 40px;
+  border-left: 2px solid black;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 28px;
+}
+
+.x::before {
+  content: '';
+  height: 40px;
+  border-left: 2px solid black;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 28px;
+}
