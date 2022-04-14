@@ -3,7 +3,7 @@ let playerTurn = 1;
 const GameBoard = (function () {
   const board = [[], [], []];
 
-  const checkWin = (token) => {
+  /* const checkWin = (token) => {
     for (let i = 0; i < 3; i++) {
       if (
         board[i][0] === token &&
@@ -64,7 +64,7 @@ const GameBoard = (function () {
         }
       });
     });
-  };
+  }; */
   return { checkWin, gameFlow };
 })();
 
