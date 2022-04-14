@@ -37,7 +37,8 @@
   border-left: 2px solid black;
   position: absolute;
   transform: rotate(45deg);
-  left: 28px;
+  top: 5px;
+  left: 25px;
 }
 
 .x::before {
@@ -46,5 +47,6 @@
   border-left: 2px solid black;
   position: absolute;
   transform: rotate(-45deg);
-  left: 28px;
+  top: 5px;
+  left: 25px;
 }
