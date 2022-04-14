@@ -41,7 +41,7 @@ const GameBoard = (function () {
     }
     return false;
   };
-
+*/
   const gameFlow = () => {
     const player1 = Player('x', 'p1', board);
     const player2 = Player('o', 'p2', board);
@@ -64,7 +64,7 @@ const GameBoard = (function () {
         }
       });
     });
-  }; */
+  };
   return { checkWin, gameFlow };
 })();
 
